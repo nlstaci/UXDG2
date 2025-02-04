@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>nav bar</title>
+    
+    <script defer src="script.js"></script>
+    </head>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+        <header>
+            <nav>
+            <ul>
+                <!-- Navigation  -->
+                <il><a href="index.html"></a></il>
+                <li><a href="ccs.html">Home</a></li>
+                <hr>
+                <li><a href="javascript.html">Hotels</a> </li>
+        
+            </ul>
+        </nav>
+        
+        </header>
+        
+
+        <body>
+            <h1>Welcome to Bali!</h1>
+            <!-- Image of Bali  -->
+            <img src="baliwallpaper.jpg" alt="Pura Ulun Danu Bratan temple in Bali">
+            <hr>
+            <!-- User name and number input & button  -->
+            <input type="text" id="destination" placeholder="Search destination">
+            <button onclick="sayHello()">Go</button>  
+
+            <!-- Output  -->
+            <p id="output"></p>
+    
+            <script>
+                function sayHello() {
+                    // Input values
+                    const name = document.getElementById('destination').value;
+    
+                    // Output
+                    document.getElementById('output').innerText = 'Welcome to ' + name + '!';
+                    }
+            </script>
+    </body>
+</html>

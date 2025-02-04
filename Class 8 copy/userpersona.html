@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UX Persona Template</title>
+        
+        <style>
+        body {
+            /* WEBSITE STYLE */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        
+        /* PERSONA CARD STYLE */
+        .persona-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        
+        /* PADDING */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        </style>
+        </head>
+        <body>
+            <div class="persona-card">
+                <h2 id="persona-name"></h2>
+                <p><strong>Age:</strong> <span id="persona-age"></span></p>
+                <p><strong>Skills:</strong></p>
+                <ul id="persona-skills"></ul>
+            </div>
+            
+            
+            <script> 
+            // # Step 1: CONCERT ENTHUSIAST 
+            let userPersona = {
+                name: "Doechii  'The Aspiring Artist'", // TODO: Replace with a name
+                age: "27", // TODO: Replace with a number
+                skills: ["Active listening", "Playlist curation", "Knowledge in music", "Patience"],
+                frustrations: ["Income",  "Lacking sense in fashion", "Not knowing how to put together a playlist"],
+                goals: ["Improve in their music", "Discovering new music", "Attending more live events", "Exploring artistic evolution", "Fashion inspiration",],
+                hobbies: ["Sharing music", "Supporting artist (buying merch)"], 
+            
+
+            // # Step 2: Create a method to introduce the persona
+            introduce: function () {
+                return `Hi, Im ${this. name}, a UX designer learning JavaScript!`;
+                }
+            };
+
+            // TODO: Return a string like "Hi, I'm [name] and I specialize in [skills]"
+
+            // # Step 3: Display Persona Details
+            document.getElementById("persona-name").innerText = userPersona.name;
+            document.getElementById("persona-age").innerText = userPersona.age;
+            let skillList = document.getElementById("persona-skills");
+
+            // # Step 4: Write a Loop to Display Skills
+
+            for (let i = 0; i < userPersona.skills.length; i++) {
+                let listItem = document.createElement("li");
+                listItem.textContent = userPersona.skills[i]; // What should go here?
+            skillList.appendChild(listItem);
+             }
+// TODO: Write a for loop to go through userPersona.skills and add each skill to the list.
+// Hint: Create an <li> element for each skill and append it to skillList.
+/* Example structure to help.
+for (let i = 0; i < ???; i++) {
+let listItem = document.createElement("li");
+listItem.textContent = `- ???`; // What should go here?
+skillList.appendChild(listItem);
+}
+*/
+// # Step 5: Console.log the persona's introduction
+console.log(userPersona.introduce());
+</script>
+</body>
+</html>

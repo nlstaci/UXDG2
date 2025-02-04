@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workshop Starter</title>
+    </head>
+    <body>
+
+<h1>Hello</h1>
+
+
+<script src="scriptClass8.js"></script>
+<script>
+function makeCoffee(type) {
+return `Here is your ${type} coffee!`;
+}
+console.log(makeCoffee("latte"));
+
+function greet() {
+console.log("Hello, world!");
+}
+greet();
+
+let user = {
+name: "Alice",
+sayHello: function() {
+return `Hello, I'm ${this. name}!`;
+}
+    };
+console. log(user.sayHello()); // Outputs: Hello, I'm Alice!
+
+//Arrays
+let skills = ["Wake up", "Eat", "Sleep"];
+console.log(skills[3]);
+
+//Loops
+ let comments = ["My name is Staci", "I'm tired"];
+ for(let i = 0; i< comments.length; i++) {
+    console.log(comments[i]);
+ }
+
+ let userPersona = {
+name: "Emily, the UX Designer", 
+age: 27,
+skills: ["Wireframing", "Prototyping", "User Research"], 
+goals: "Improve coding skills to create better UI interactions", 
+frustration: "JavaScript seems too complex!"
+ };
+
+userPersona.introduce = function(){
+    return `Hi`;
+
+};
+console.log(userPersona.introduce());
+</script>
+
+</body>
+</html>
